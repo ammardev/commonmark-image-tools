@@ -1,0 +1,41 @@
+{
+    "name": "ammardev/commonmark-image-tools",
+    "description": "Enhancements for image markdown rendering with league/commonmark",
+    "keywords": [
+        "commonmark-image-tools"
+    ],
+    "homepage": "https://github.com/ammardev/commonmark-image-tools",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ammar Al-Khawaldeh",
+            "email": "me@ammar.dev",
+            "homepage": "https://ammar.dev",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "league/commonmark": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ammardev\\CommonMarkImageTools\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ammardev\\CommonMarkImageTools\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
